@@ -19,6 +19,7 @@
     "vinyl-source-stream": "~1.0.0"
   },
   "dependencies": {
+    "@tinymce/tinymce-angular": "^4.2.1",
     "babel": "^4.0.2",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
@@ -48,6 +49,7 @@
     "laravel-elixir": "^4.2.1",
     "laravel-elixir-karma": "^0.2.2",
     "main-bower-files": "^2.1.0",
+    "tinymce": "^5.7.0",
     "underscore": "^1.8.3",
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1",

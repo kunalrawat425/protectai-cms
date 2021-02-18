@@ -1,5 +1,5 @@
 {
-    "name": "Laravel Angular Admin",
+    "name": "laravel/admin",
     "description": "Laravel + Angularjs + Bootstrap + AdminLTE binded by Gulp workflow Admin Dashboard Boilerplate",
     "keywords": ["laravel", "angular", "bootstrap", "admin", "admin template", "ui-router", "api", "angular-bootstrap"],
     "license": "MIT",

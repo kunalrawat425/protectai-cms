@@ -369,4 +369,17 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('blog-add', {
+        url: '/blog-add',
+        views: {
+          'layout': {
+            templateUrl: getView('blog-add')
+          },
+          'header@app': {},
+          'footer@app': {}
+        },
+        data: {
+          bodyClass: 'hold-transition login-page'
+        }
+      })
 }
