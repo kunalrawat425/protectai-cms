@@ -10,34 +10,38 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-7 offset-3 mt-4">
+            <div class="col-md-8 offset-2 mt-4">
                 <div class="card-body">
-                    <form method="post" action="" enctype="multipart/form-data">
+                    <form method="post" action="/addBlog" enctype="multipart/form-data">
                         <!-- @csrf -->
-                        <div class="form-group">
-                            <textarea class="ckeditor form-control" id="editor1" name="editor1"></textarea>
+                        <input class="mt-2"  type="text" name="Title" id="title" placeholder="Title" style="width: 100%;height: 50%;">
+                        <div class="mt-2 form-group">
+                            <textarea class="ckeditor form-control" id="editor" name="Editor"></textarea>
                         </div>
+                        <input class="mt-2"  type="text" name="SEO-Title" id="seo-title" placeholder="SEO Title" style="width: 100%;height: 50%;">
+                        <input class="mt-2" type="text" name="SEO-Description" id="seo-description" placeholder="SEO Description" style="width: 100%;height: 50%;">
+                        <input class="mt-2" type="text" name="Author" id="author" placeholder="Author" style="width: 100%;height: 50%;">
+                        <div class="row">
+                            <div class="pl-5 pr-5">
+                                <label>Status:</label>
+                            </div>
+                            <div class="pl-5 pr-5">
+                                <input class="mt-2" type="radio" id="draft" name="status-option" value="draft">
+                                <label class="mt-2" for="draft">Draft</label><br>
+                            </div>
+                            <div class="pl-5 pr-5"></div>
+                                <input class="mt-2" type="radio" id="publish" name="status-option" value="publish">
+                                <label class="mt-2" for="publish">Publish</label><br>
+                            </div>
+                        </div>
+                        <button type="submit">Save</button>
                     </form>
-                    <button onclick="updateDiv()">Save</button>
-                    <p id="p">This is some text</p>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 
-<script>
-    function updateDiv()
-    {
-        console.log("hello");
-        var paragraph = document.getElementById("p");
-        var text = document.createTextNode("This just got added");
-        var editorText = CKEDITOR.instances.editor1.getData();
-        console.log(editorText);
-    }
-</script>
-
-</html> 
+</html>
 
