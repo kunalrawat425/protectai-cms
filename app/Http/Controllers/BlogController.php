@@ -9,7 +9,7 @@ use App\Blog;
 
 class BlogController extends Controller
 {
-    //
+
     public function addBlog()
     {
         // Blog::create($request->all());
@@ -19,8 +19,12 @@ class BlogController extends Controller
         $p -> author = request('Author');
         $p -> seo_title = request('SEO-Title');
         $p -> seo_description = request('SEO-Description');
-        $p -> text = request('status-option');
-        // $p -> created_at =
+        $p -> slug = str_slug(request('Title'), '-');
+        $p -> is_published = request('status-option');
+
         $p -> save();
+        return view('index');
     }
+
+
 }

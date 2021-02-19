@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-2 mt-4">
-                <div class="card-body">
+                
                     <form method="post" action="/addBlog" enctype="multipart/form-data">
                         <!-- @csrf -->
                         <input class="mt-2"  type="text" name="Title" id="title" placeholder="Title" style="width: 100%;height: 50%;">
@@ -32,7 +32,6 @@
                             <div class="pl-5 pr-5"></div>
                                 <input class="mt-2" type="radio" id="publish" name="status-option" value="publish">
                                 <label class="mt-2" for="publish">Publish</label><br>
-                            </div>
                         </div>
                         <button type="submit">Save</button>
                     </form>
