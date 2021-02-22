@@ -39,5 +39,7 @@ $api->group(['middleware' => ['api', 'api.auth', 'role:admin.super|admin.user']]
 });
 
 Route::post('/addBlog', 'BlogController@addBlog');
-Route::get('/blog', 'BlogController@index');
+Route::get('/blog/{id}', 'BlogController@getBlog');
+Route::get('/blogs', 'BlogController@allBlogs');
+Route::get('/index', 'BlogController@index');
 
