@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-2 mt-4">
-                
+
                     <form method="post" action="/addBlog" enctype="multipart/form-data">
                         <!-- @csrf -->
                         <input class="mt-2"  type="text" name="Title" id="title" placeholder="Title" style="width: 100%;height: 50%;">
@@ -44,3 +44,29 @@
 
 </html>
 
+
+<form action="/saveBlog" method="post" enctype="multipart/form-data">
+    <div class="form-group col-lg-12">
+        <input class="mt-2"  type="text" name="Title" id="title" placeholder="Title" style="width: 75%;height: 50%;">
+        <textarea id="editor" name="Editor"></textarea>
+        <input class="mt-2"  type="text" name="SEO-Title" id="seo-title" placeholder="SEO Title" style="width: 75%;height: 50%;">
+        <input class="mt-2" type="text" name="SEO-Description" id="seo-description" placeholder="SEO Description" style="width: 75%;height: 50%;">
+        <input class="mt-2" type="text" name="Author" id="author" placeholder="Author" style="width: 75%;height: 50%;">
+            <div class="pl-5 pr-5">
+                <label>Status:</label>
+            </div>
+            <div class="row">
+                <div class="pl-5 pr-5">
+                    <input class="mt-2 form-check-input" type="radio" id="draft" name="status-option" value="draft">
+                    <label class="mt-2" for="draft">Draft</label>
+                </div>
+                <div class="pl-5 pr-5">
+                    <input class="mt-2 form-check-input" type="radio" id="publish" name="status-option" value="publish">
+                    <label class="mt-2" for="publish">Publish</label>
+                </div>
+            </div>
+                <!-- <div class="row"> -->
+                    <button type="submit">Save</button>
+                <!-- </div> -->
+    </div>
+</form>

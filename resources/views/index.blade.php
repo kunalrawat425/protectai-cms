@@ -23,7 +23,6 @@
         <div ui-view="layout"></div>
         <div class="control-sidebar-bg"></div>
     </div>
-<?= \Elsayednofal\FroalaEditor\Froala::initEditor("name",'id', 'content', $is_required=true)?>
 
     <script src="{!! elixir('js/final.js') !!}" async defer></script>
 </body>

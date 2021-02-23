@@ -41,4 +41,23 @@ class BlogController extends Controller
         $blogs = DB::select("select * from blogs where is_published='publish'");
         return view('all-blogs-display',['blogs'=>$blogs]);
     }
+    public function addBlog1()
+    {
+        return view('blog-add');
+    }
+    public function saveBlog()
+    {
+        $p = new Blog;
+        $p -> title = request('Title');
+        $p -> body = request('Editor');
+        $p -> author = request('Author');
+        $p -> seo_title = request('SEO-Title');
+        $p -> seo_description = request('SEO-Description');
+        $p -> slug = str_slug(request('Title'), '-');
+        $p -> is_published = request('status-option');
+        $p -> save();
+        $body = request('Editor');
+        echo $body;
+        return view('blog-add');
+    }
 }
