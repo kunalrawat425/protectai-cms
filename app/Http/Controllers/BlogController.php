@@ -11,18 +11,20 @@ use App\Blog;
 class BlogController extends Controller
 {
 
-    public function addBlog()
+    public function addBlog(Request $request)
     {
-        // Blog::create($request->all());
-        $p = new Blog;
-        $p -> title = request('Title');
-        $p -> body = request('Editor');
-        $p -> author = request('Author');
-        $p -> seo_title = request('SEO-Title');
-        $p -> seo_description = request('SEO-Description');
-        $p -> slug = str_slug(request('Title'), '-');
-        $p -> is_published = request('status-option');
-        $p -> save();
+        Blog::create($request->all());
+        // $p = new Blog;
+        // $p -> title = $request -> input('title');
+        // echo $p;
+        // $p -> title = request('title');
+        // $p -> body = request('body');
+        // $p -> author = request('author');
+        // $p -> seo_title = request('seo_title');
+        // $p -> seo_description = request('seo_description');
+        // $p -> slug = str_slug(request('slug'), '-');
+        // $p -> is_published = request('is_published');
+        // $p -> save();
         return view('index');
     }
     public function index()
@@ -45,8 +47,9 @@ class BlogController extends Controller
     {
         return view('blog-add');
     }
-    public function saveBlog()
+    public function saveBlog(Request $request)
     {
+        // Blog::create($request->all());
         $p = new Blog;
         $p -> title = request('Title');
         $p -> body = request('Editor');
@@ -56,8 +59,8 @@ class BlogController extends Controller
         $p -> slug = str_slug(request('Title'), '-');
         $p -> is_published = request('status-option');
         $p -> save();
-        $body = request('Editor');
-        echo $body;
-        return view('blog-add');
+        // $body = request('Editor');
+        // echo $body;
+        return view('index');
     }
 }

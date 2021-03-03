@@ -44,4 +44,5 @@ Route::get('/blog/{id}', 'BlogController@getBlog');
 Route::get('/blog-add', 'BlogController@addBlog1');
 Route::get('/blogs', 'BlogController@allBlogs');
 Route::get('/index', 'BlogController@index');
-
+// Route::post('/register', 'MailController@subscribe');
+Route::get('/subscribe/email}', 'MailController@subscribe');

@@ -18,23 +18,23 @@
     <!-- You can use a div tag as well. -->
 <form action="/saveBlog" method="post" enctype="multipart/form-data">
     <div class="form-group col-lg-12">
-        <input class="mt-4  ml-5"  type="text" name="Title" id="title" placeholder="Title" style="width: 75%;height: 50%;">
+        <input class="mt-4  ml-5"  type="text" name="title" id="title" placeholder="Title" style="width: 75%;height: 50%;">
         <div class="mt-4 ml-5">
-            <textarea id="editor" name="Editor"></textarea>
+            <textarea id="body" name="body"></textarea>
         </div>
-        <input class="mt-4 ml-5"  type="text" name="SEO-Title" id="seo-title" placeholder="SEO Title" style="width: 75%;height: 50%;">
-        <input class="mt-4 ml-5" type="text" name="SEO-Description" id="seo-description" placeholder="SEO Description" style="width: 75%;height: 50%;">
-        <input class="mt-4 ml-5" type="text" name="Author" id="author" placeholder="Author" style="width: 75%;height: 50%;">
+        <input class="mt-4 ml-5"  type="text" name="seo_title" id="seo_title" placeholder="SEO Title" style="width: 75%;height: 50%;">
+        <input class="mt-4 ml-5" type="text" name="seo_description" id="seo_description" placeholder="SEO Description" style="width: 75%;height: 50%;">
+        <input class="mt-4 ml-5" type="text" name="author" id="author" placeholder="Author" style="width: 75%;height: 50%;">
         <div class="row mt-4">
             <div class="ml-5">
                 <label>Status:</label>
             </div>
                 <div class="ml-5">
-                    <input class=""form-check-input" type="radio" id="draft" name="status-option" value="draft">
+                    <input class="form-check-input" type="radio" id="draft" name="is_published" value="draft">
                     <label class="" for="draft">Draft</label>
                 </div>
                 <div class="ml-5 ">
-                    <input class=""form-check-input" type="radio" id="publish" name="status-option" value="publish">
+                    <input class="form-check-input" type="radio" id="publish" name="is_published" value="publish">
                     <label class="" for="publish">Publish</label>
                 </div>
             </div>

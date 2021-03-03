@@ -1,4 +1,7 @@
 
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 <!-- Page Conttent -->
 <main class="page-content">
     <!-- Start Post Carousel Style-->
@@ -21,9 +24,9 @@
                                 <li><i class="zmdi zmdi-account-calendar"></i> By : <a href="#">{{$blog->author}}</a></li>
                             </ul>
                             <p>{{strip_tags($blog->body)}}</p>
-                            <div class="post-btn">
+                            <!-- <div class="post-btn">
                                 <a class="readmore-btn btn btn-circle" >READ MORE</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
