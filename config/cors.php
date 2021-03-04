@@ -18,4 +18,6 @@ return [
     'exposedHeaders' => [],
     'maxAge' => 0,
     'hosts' => [],
+    'paths' => ['*'],
+
 ];
