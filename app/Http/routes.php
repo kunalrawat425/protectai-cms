@@ -38,7 +38,7 @@ $api->group(['middleware' => ['api', 'api.auth', 'role:admin.super|admin.user']]
     $api->controller('users', 'UserController');
 });
 
-Route::post('/addBlog', 'BlogController@addBlog');
+// Route::post('/addBlog', 'BlogController@addBlog');
 Route::post('/saveBlog', 'BlogController@saveBlog');
 Route::get('/blog/{id}', 'BlogController@getBlog');
 Route::get('/blog-add', 'BlogController@addBlog1');

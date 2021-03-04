@@ -11,22 +11,7 @@ use App\Blog;
 class BlogController extends Controller
 {
 
-    public function addBlog(Request $request)
-    {
-        Blog::create($request->all());
-        // $p = new Blog;
-        // $p -> title = $request -> input('title');
-        // echo $p;
-        // $p -> title = request('title');
-        // $p -> body = request('body');
-        // $p -> author = request('author');
-        // $p -> seo_title = request('seo_title');
-        // $p -> seo_description = request('seo_description');
-        // $p -> slug = str_slug(request('slug'), '-');
-        // $p -> is_published = request('is_published');
-        // $p -> save();
-        return view('index');
-    }
+
     public function index()
     {
         $blogs = Blog::all();
