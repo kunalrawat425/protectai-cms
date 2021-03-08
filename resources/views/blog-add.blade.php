@@ -16,7 +16,7 @@
   <body>
     <!-- Create a tag that we will use as the editable area. -->
     <!-- You can use a div tag as well. -->
-<!-- <form action="/saveBlog" method="post" enctype="multipart/form-data">
+<form action="/saveBlog" method="post" enctype="multipart/form-data">
     <div class="form-group col-lg-12">
         <input class="mt-4  ml-5"  type="text" name="title" id="title" placeholder="Title" style="width: 75%;height: 50%;">
         <div class="mt-4 ml-5">
@@ -42,11 +42,11 @@
                 <button type="submit">Save</button>
             </div>
     </div>
-</form> -->
-<form action="/subscribe" method="post" enctype="multipart/form-data">
+</form>
+<!-- <form action="/subscribe" method="post" enctype="multipart/form-data">
     <input class="mt-4  ml-5"  type="text" name="email" id="email" placeholder="Email" style="width: 75%;height: 50%;">
     <button type="submit">Save</button>
-</form>
+</form> -->
 
 
 

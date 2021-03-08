@@ -31,7 +31,7 @@ class BlogController extends Controller
     public function addBlog1()
     {
         return view('blog-add');
-        // return redirect()->away('https://www.google.com');
+        return redirect()->away('https://www.google.com');
 
     }
     public function saveBlog(Request $request)
